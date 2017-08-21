@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Histogram from './Histogram'
 import Nouislider from 'react-nouislider';
 
+//Componentes
+import PropertiesScreen from '../containers/PropertiesScreen';
 var d3 = require('d3');
 
 export default class App extends Component {
@@ -65,6 +67,8 @@ export default class App extends Component {
       </div>
       <h2>Valor Minimo: {this.state.min_value}</h2>
       <h2>Valor Maximo: {this.state.max_value}</h2>
+
+      <PropertiesScreen />
      </div>
    );
   }
